@@ -1,12 +1,44 @@
 body{
 	text-align: center;
+	font-family: Helvetica;
+	font-size: 14px;
 }
 .lookupform{
 	margin-right:auto;
 	margin-left:auto;
+	font-family: Helvetica;
+	color:gray;
+	font-size: 14px;
+	margin-top:20%;
 }
+.lookupform input{
+	height: 30px;
+	padding: 0;
+	font-family: Helvetica;
+	font-size: 14px;
+	width:600px;
+	color:gray;
+	border: 1px solid gray;
+	padding-left: 2px;
+	border-radius: 2px;
+	}
+
+
 
 svg{
 	margin-right:auto;
 	margin-left:auto;
+}
+
+#submitbutton{
+	height: 30px;
+	font-family: Helvetica;
+	color:white;
+	font-size: 14px;
+	width: 250px;
+	border: 1px solid dodgerblue;
+	padding-left: 2px;
+	border-radius: 2px;
+	background-color:dodgerblue;
+	padding: 0;
 }

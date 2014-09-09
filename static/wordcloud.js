@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#hashform").submit(function(){
-    $("svg").remove(function(){ 
+    $("svg").remove(); 
 
       var fill = d3.scale.ordinal()
           .range(colorbrewer.RdGy[5]);
@@ -52,9 +52,9 @@ $(document).ready(function(){
 
       
 
-    });
+  
 
-
+    event.preventDefault();
 
   });
 

@@ -46,8 +46,11 @@ def getwordlist(word):
 def wordfilter(listofwords): #takes list as argument
     newlist = []
     for word in listofwords:
-        if ((containsObject(word, blacklist) == False) and (word[:4] != "http") and (word[:2] != "rt") and (word != wordtograph)):
-            word.strip(',')
+        word.strip(',"\'&;+=-_@^:[]')
+        if ((containsObject(word, blacklist) == False) and \
+            (word[:4] != "http") and (word[:2] != "rt") and \
+            (word[:1] != "@") and (len(word) != 1)):
+            word.strip(',"\'&;+=-_@^:[]')
             if word[0] =="#":
                 word = word[1:]
             newlist.append(word)
@@ -65,7 +68,7 @@ def containsObject(wordtotest, blacklist):
 def getFrequency(text): 
     freq = Counter(text) 
     
-    return dict(freq.most_common(150))
+    return dict(freq.most_common(200n))
    
 def runserver():
     port = int(os.environ.get('PORT', 5000))

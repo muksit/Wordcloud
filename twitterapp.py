@@ -68,7 +68,7 @@ def containsObject(wordtotest, blacklist):
 def getFrequency(text): 
     freq = Counter(text) 
     
-    return dict(freq.most_common(200n))
+    return dict(freq.most_common(200))
    
 def runserver():
     port = int(os.environ.get('PORT', 5000))

@@ -49,7 +49,7 @@ def wordfilter(listofwords): #takes list as argument
         word.strip(',"\'&;+=-_@^:[]')
         if ((containsObject(word, blacklist) == False) and \
             (word[:4] != "http") and (word[:2] != "rt") and \
-            (word[:1] != "@") and (len(word) != 1)):
+            (word[:1] != "@")):
             word.strip(',"\'&;+=-_@^:[]')
             if word[0] =="#":
                 word = word[1:]

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#target").submit(function(){
+  $("#hashform").submit(function(){
     $("svg").remove();
 
     var fill = d3.scale.ordinal()

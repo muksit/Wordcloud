@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#word").submit(function(){
+  $("#target").submit(function(){
     $("svg").remove();
 
     var fill = d3.scale.ordinal()

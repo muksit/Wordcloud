@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("svg").remove(); 
 
       var fill = d3.scale.ordinal()
-          .range(colorbrewer.RdGy[5]);
+          .range(colorbrewer.Spectral[5]);
 
 
       var inputword = $('#word').val();

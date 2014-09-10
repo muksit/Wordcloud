@@ -2,6 +2,7 @@ body{
 	text-align: center;
 	font-family: Helvetica;
 	font-size: 14px;
+	background: black;
 }
 .lookupform{
 	margin-right:auto;
@@ -10,18 +11,28 @@ body{
 	color:gray;
 	font-size: 14px;
 	margin-top:10%;
+	display: block;
 }
 .lookupform input{
-	height: 30px;
+	height: 60px;
 	padding: 0;
 	font-family: Helvetica;
-	font-size: 14px;
-	width:600px;
-	color:gray;
+	font-size: 25px;
+	width:300px;
+	color: #404040;
 	border: 1px solid gray;
 	padding-left: 2px;
 	border-radius: 2px;
 	}
+
+label{
+	font-size:90px;
+	display:inline-block;
+	padding-right:10px; 
+	vertical-align:top;
+	margin-top: -20px;
+	color:#fdae61;
+}
 
 
 
@@ -34,11 +45,11 @@ svg{
 	height: 30px;
 	font-family: Helvetica;
 	color:white;
-	font-size: 14px;
+	font-size: 25px;
 	width: 250px;
-	border: 1px solid dodgerblue;
+	border: 1px solid #ca0020;
 	padding-left: 2px;
 	border-radius: 2px;
-	background-color:dodgerblue;
+	background-color: #ca0020;
 	padding: 0;
 }

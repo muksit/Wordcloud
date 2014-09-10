@@ -33,16 +33,31 @@ $(document).ready(function(){
             .selectAll("text")
               .data(words)
             .enter().append("text")
-              .style("font-size", function(d) { return d.size + "px"; })
+              
               .style("font-family", "Impact")
-              .style("fill", function(d, i) { return fill(i); })
+              
               .attr("text-anchor", "middle")
+              
+              .style("opacity", 0)
+              .text(function(d) { return d.text; })
+              .transition()
               .attr("transform", function(d) {
                 return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
               })
-              .text(function(d) { return d.text; });
+              .style("fill", function(d, i) { return fill(i); })
+              .style("opacity", 1)
+
+              .duration(500)
+              .transition()
+              .style("font-size", function(d) { return d.size + "px"; })
+              duration(2000)
+              
+              ;
+
         };
 
+        svg
+          
         
 
 

@@ -2,7 +2,7 @@ body{
 	text-align: center;
 	font-family: Helvetica;
 	font-size: 14px;
-	background: black;
+	background: #202020;
 }
 .lookupform{
 	margin-right:auto;
@@ -31,7 +31,7 @@ label{
 	padding-right:10px; 
 	vertical-align:top;
 	margin-top: -20px;
-	color:#fdae61;
+	color:#2c7bb6;
 }
 
 

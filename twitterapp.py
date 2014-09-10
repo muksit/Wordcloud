@@ -2,7 +2,7 @@ from TwitterAPI import TwitterAPI
 import nltk
 from counter import Counter 
 import os, time, json, datetime 
-import appconfig
+#import appconfig
 from json import JSONEncoder, load
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, json, jsonify, send_file

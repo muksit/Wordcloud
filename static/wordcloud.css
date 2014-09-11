@@ -1,8 +1,19 @@
+@font-face{
+	font-family: 'emoji';
+	src: url(OpenSansEmoji.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	text-align: center;
 	font-family: Helvetica;
 	font-size: 14px;
 	background: #202020;
+}
+
+.emoji{
+	font-family: 'emoji';
 }
 .lookupform{
 	margin-right:auto;

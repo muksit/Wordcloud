@@ -15,6 +15,7 @@ body{
 .emoji{
 	font-family: 'emoji';
 }
+
 .lookupform{
 	margin-right:auto;
 	margin-left:auto;
@@ -24,6 +25,7 @@ body{
 	margin-top:10%;
 	display: block;
 }
+
 .lookupform input{
 	height: 60px;
 	padding: 0;
@@ -37,12 +39,13 @@ body{
 	}
 
 label{
-	font-size:90px;
+	font-size:200px;
 	display:inline-block;
 	padding-right:10px; 
-	vertical-align:top;
+	vertical-align:middle;
 	margin-top: -20px;
 	color:#2c7bb6;
+	font-family: "Impact";
 }
 
 
@@ -50,6 +53,20 @@ label{
 svg{
 	margin-right:auto;
 	margin-left:auto;
+}
+
+a{
+	cursor:pointer;
+}
+
+#word{
+	padding-left: 10px;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {   
+	border-color: none;
+	box-shadow: none;
+	outline: 0 none;
 }
 
 #submitbutton{
@@ -63,4 +80,9 @@ svg{
 	border-radius: 5px;
 	background-color: #ca0020;
 	padding: 0;
+}
+
+#submitbutton:hover{
+	border: 4px solid #2c7bb6;
+
 }

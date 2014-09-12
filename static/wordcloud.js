@@ -33,7 +33,6 @@ $(document).ready(function(){
             .fontSize(function(d) { return d.size; })
             .on("end", draw)
             .start();
-          draw(words);
       }, "json");
 
     event.preventDefault();
@@ -67,8 +66,6 @@ function drawwordcloud(newword){
           .fontSize(function(d) { return d.size; })
           .on("end", draw)
           .start();
-
-          draw(words);
     }, "json");
 }
 
@@ -85,12 +82,11 @@ function draw(words) {
       .attr("transform", "translate(500,400)")
     .selectAll("text")
       .data(words)
-    .enter().append("a")
-        .on("click", function(d){
+    .enter().append("text")
+      .on("click", function(d){
           d3.select(".loading").text("Graphing " + d.text + " ...")
           drawwordcloud(d.text);
         })
-      .append("text")
       .style("font-family", "Impact")
       .attr("text-anchor", "middle")
       .style("opacity", 0)
@@ -125,8 +121,6 @@ function draw(words) {
             {return "Impact"}
         }
       })
-      ;
-
-    
+      ;   
 
 };

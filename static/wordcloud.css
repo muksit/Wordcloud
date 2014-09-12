@@ -57,11 +57,11 @@ label{
 
 
 svg {
-	margin-right:auto;
-	margin-left:auto;
+	margin:0 auto;
+	clear:both;
 }
 
-a{
+.text{
 	cursor:pointer;
 }
 

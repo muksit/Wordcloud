@@ -1,31 +1,43 @@
-<html>
+<DOCTYPE html>
+<html ng-app="App" ng-controller="Controller">
+
 <head>
 	<title>Hashcloud</title>
-	<link rel="stylesheet" type="text/css" href="../static/wordcloud.css">
+	
 	<script src="../static/jquery-2.0.3.js"></script>
+	<!-- <script src="../static/angular.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+	<script src="../static/app.js"></script>
 	<script src="../static/colorbrewer.js"></script>
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script src="../static/d3.layout.cloud.js"></script>
 	<script src="../static/wordcloud.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/wordcloud.css">
 
 </head>
 
 <body>
+	<!-- <div ng-app class ="loading ng-binding">
+		<input ng-model="name2"/>
+	insert {{ name2 }} here 
+	</div> -->
 	
 
 	<div class="lookupform">
 	    <form id="hashform">
 	    	<label>#</label>
-	    	<input type="text" name="word" id="word" placeholder = "Enter word or phrase"/>
+	    	<input ng-model="wordtograph" type="text" name="word" id="word" placeholder = "Enter word or phrase" />
 	    	<input type="submit" value="Go" id="submitbutton">
 		</form>
+
+	
 		  
 	    
 
 	</div>
-
-
-	<svg> </svg>
+<!-- 
+	<div><p ><span class="loading" ng-show="wordtograph"> {{ wordtograph }} ...</span></p></div>
+	<svg> </svg> -->
 
 
 </body>

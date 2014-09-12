@@ -22,7 +22,7 @@ body{
 	font-family: Helvetica;
 	color:gray;
 	font-size: 14px;
-	margin-top:10%;
+	margin-top:175px;
 	display: block;
 }
 
@@ -50,13 +50,24 @@ label{
 
 
 
-svg{
+svg {
 	margin-right:auto;
 	margin-left:auto;
 }
 
 a{
 	cursor:pointer;
+}
+
+text:hover{
+
+	opacity:.5;
+}
+
+.text:hover{
+	fill:black;
+	background-color: black;
+	color:black;
 }
 
 #word{
@@ -67,6 +78,12 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	border-color: none;
 	box-shadow: none;
 	outline: 0 none;
+}
+
+
+
+.loading{
+	color:white;
 }
 
 #submitbutton{

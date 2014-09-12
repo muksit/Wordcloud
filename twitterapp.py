@@ -4,7 +4,7 @@ from counter import Counter
 import os, time, json, datetime 
 from json import JSONEncoder, load
 from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash, json, jsonify, send_file
+     render_template, flash, json, jsonify, send_file, make_response
 #import appconfig
 
 # create application 
@@ -23,7 +23,7 @@ blacklist = "a,we,We,table,It,Our,us,us.,/,/,The,able,about,across,after,all,alm
 wordtograph = ""
 @app.route('/',)
 def input():
-    return render_template('index.html')
+      return make_response(open('templates/index.html').read())
 
 
 #return list of words

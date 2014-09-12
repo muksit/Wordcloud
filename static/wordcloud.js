@@ -2,6 +2,8 @@ $(document).ready(function(){
   $("#hashform").submit(function(){
     $("svg").remove(); 
 
+    $(".loading").toggle();
+
     var fill = d3.scale.ordinal()
         .range(colorbrewer.Spectral[5]);
 
@@ -11,6 +13,8 @@ $(document).ready(function(){
     $.get("/ask", {word: inputword}, function(data){
 
         var sampletext = (Object.keys(data))
+
+        $('#word').val('');
         
         d3.layout.cloud().size([1000, 800])
             .words(sampletext.map(function(d) {
@@ -31,12 +35,14 @@ $(document).ready(function(){
             .start();
           draw(words);
       }, "json");
+
     event.preventDefault();
   });
 });
 
 function drawwordcloud(newword){
   $("svg").remove(); 
+  
 
   var inputword = newword.toLowerCase()
   var words = {};
@@ -49,7 +55,6 @@ function drawwordcloud(newword){
               return {text: d.toUpperCase(), size: 5 * (data[d])+ 5 };
               }))
           .rotate(function() { return ~~(Math.random() * 2) * 90; })
-          /*.font("Impact")*/
           .font(function(d){
               for (x=0; x < d.text.length; x++){
                 character = d.text
@@ -72,6 +77,7 @@ function draw(words) {
   var fill = d3.scale.ordinal()
     .range(colorbrewer.Spectral[5]);
 
+
   d3.select("body").append("svg")
       .attr("width", 1000)
       .attr("height", 800)
@@ -81,6 +87,7 @@ function draw(words) {
       .data(words)
     .enter().append("a")
         .on("click", function(d){
+          d3.select(".loading").text("Graphing " + d.text + " ...")
           drawwordcloud(d.text);
         })
       .append("text")
@@ -120,6 +127,6 @@ function draw(words) {
       })
       ;
 
-
+    
 
 };

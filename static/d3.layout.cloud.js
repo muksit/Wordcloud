@@ -182,7 +182,8 @@
   }
 
   function cloudFont() {
-    return "serif";
+/*    return "serif";*/
+      return "Impact";
   }
 
   function cloudFontSize(d) {
@@ -194,7 +195,8 @@
   }
 
   function cloudPadding() {
-    return 1;
+/*    return 1;*/
+    return 2;
   }
 
   // Fetches a monochrome sprite bitmap for the specified text.

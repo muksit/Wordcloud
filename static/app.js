@@ -1,6 +1,7 @@
-var scope;
+/*var scope;
 
-(function() {
+(function() {*/
+  var scope;
   
   var app = angular.module('App', []);
 
@@ -12,5 +13,5 @@ var scope;
     
   }]);
 
-})();
+/*})();*/
 

@@ -13,7 +13,7 @@
 
 body{
 	text-align: center;
-	font-family: Helvetica;
+	font-family: "Josefin Sans";
 	font-size: 14px;
 	background: #202020;
 }
@@ -25,17 +25,17 @@ body{
 .lookupform{
 	margin-right:auto;
 	margin-left:auto;
-	font-family: Helvetica;
+	font-family: "Josefin Sans";
 	color:gray;
 	font-size: 14px;
-	margin-top:175px;
+	margin-top:150px;
 	display: block;
 }
 
 .lookupform input{
 	height: 60px;
 	padding: 0;
-	font-family: Helvetica;
+	font-family: "Josefin Sans";
 	font-size: 25px;
 	width:300px;
 	color: #404040;
@@ -65,16 +65,6 @@ a{
 	cursor:pointer;
 }
 
-text:hover{
-
-	opacity:.5;
-}
-
-.text:hover{
-	fill:black;
-	background-color: black;
-	color:black;
-}
 
 #word{
 	padding-left: 10px;
@@ -90,11 +80,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 .loading{
 	color:white;
+	display:none;
+	font-size: 20px;
+	font-family: 'Josefin Sans';
 }
 
 #submitbutton{
 	height: 60px;
-	font-family: Helvetica;
+	font-family: "Josefin Sans";
 	color:white;
 	font-size: 25px;
 	width: 250px;

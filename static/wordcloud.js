@@ -86,7 +86,7 @@ function draw(words) {
       .on("click", function(d){
           d3.select(".loading").text("Graphing " + d.text + " ...")
           drawwordcloud(d.text);
-        })
+         event.preventDefault();})
       .style("font-family", "Impact")
       .attr("text-anchor", "middle")
       .style("opacity", 0)

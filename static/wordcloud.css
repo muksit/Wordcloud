@@ -16,6 +16,7 @@ body{
 	font-family: "Josefin Sans";
 	font-size: 14px;
 	background: #202020;
+	min-height: 1200px;
 }
 
 .emoji{
@@ -28,7 +29,7 @@ body{
 	font-family: "Josefin Sans";
 	color:gray;
 	font-size: 14px;
-	margin-top:150px;
+	margin-top:100px;
 	display: block;
 }
 

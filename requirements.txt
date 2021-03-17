@@ -7,7 +7,7 @@ Sys==1.0
 TwitterAPI==2.2.0
 Werkzeug==0.9.6
 argparse==1.2.1
-httplib2==0.9
+httplib2==0.19.0
 itsdangerous==0.24
 nltk==2.0.4
 oauth2==1.0.0

@@ -12,6 +12,6 @@ itsdangerous==0.24
 nltk==2.0.4
 oauth2==1.0.0
 oauthlib==0.6.3
-requests==2.3.0
+requests==2.20.0
 requests-oauthlib==0.4.1
 wsgiref==0.1.2
